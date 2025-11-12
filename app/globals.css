@@ -12,25 +12,65 @@
   }
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Marcellus";
+  src: url("/fonts/Marcellus-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@font-face {
+  font-family: "MeieScript";
+  src: url("/fonts/MeieScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "WorkSans";
+  src: url("/fonts/WorkSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "WorkSans";
+  src: url("/fonts/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/fonts/WorkSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/fonts/WorkSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* ----- FONTS ----- */
+  --font-marcellus: "Marcellus", serif;
+  --font-meie: "MeieScript", cursive;
+  --font-worksans: "WorkSans", sans-serif;
+
+  /* ----- COLORS ----- */
+  --color-mainWhite: #f6f6f6;
+  --color-mainBlack: #1a1a1a;
+  --color-mainLightPurple: #b8bdeb;
+  --color-mainDarkPurple: #9fa6e6;
+  --color-additionalBlue: #818bec;
+  --color-additionalBlack: #0f0f0f;
 }
